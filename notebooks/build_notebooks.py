@@ -191,7 +191,7 @@ def plot_lvs(arch):
         mark_mid(ax, arch, xpos)
         thin_layer_ticks(ax, layers)
         ax.set_ylim(0, ymax)
-        ax.set_title(fr"$\\epsilon = {b:g}$")
+        ax.set_title(fr"$p = {b:g}$")
         ax.set_xlabel("layer")
     axes[0][0].set_ylabel("LVS (median, 95% CI)")
     variant_attack_legend(fig)
@@ -220,7 +220,7 @@ def plot_asr(arch):
         mark_mid(ax, arch, xpos)
         thin_layer_ticks(ax, layers)
         ax.set_ylim(-0.03, 1.05)
-        ax.set_title(fr"$\\epsilon = {b:g}$")
+        ax.set_title(fr"$p = {b:g}$")
         ax.set_xlabel("layer")
     axes[0][0].set_ylabel("judged ASR")
     variant_attack_legend(fig)
@@ -644,7 +644,7 @@ plt.show()
 ### The audit gap at a glance (paper Table 1)
 
 One number per audit, architecture, and model: the two static audits (direct-harm ASR and the probe
-calibrated safe-unsafe gap) are indistinguishable between base and dissociated, while every
+calibrated unsafe-safe gap) are indistinguishable between base and dissociated, while every
 intervention-based measure separates them. PGD ASR and the steering door are read at the trained
 layer / fraction 0.06; LVS at the trained layer with budget 0.001; the onset $t_{0.8}$ is the
 across-seed mean on the in-distribution attack.
@@ -674,7 +674,7 @@ for a in ARCHS:
 cols = pd.MultiIndex.from_product([[ARCH_SHORT[a] for a in ARCHS], ["base", "dissoc."]])
 glance = pd.DataFrame([fmt("%.2f", direct), fmt("%.3f", gap), fmt("%.2f", pgd),
                        fmt("%.2f", lvsn), fmt("%.2f", door), fmt("%.1f", t08)],
-                      index=["static: direct-harm ASR", "static: probe safe-unsafe gap",
+                      index=["static: direct-harm ASR", "static: probe unsafe-safe gap",
                              "intervention: PGD ASR @ trained layer", "intervention: LVS @ trained layer",
                              "intervention: steering door @ frac 0.06",
                              "intervention: harmful-SFT t_0.8 (steps)"], columns=cols)
@@ -686,7 +686,7 @@ display(glance)
 The paper's Figure 1 keeps the original schematic for panels (a) and (b); panel (c) is redrawn here
 from the measured numbers. Three audits of the same two models: the behavioral red-team and the static
 latent probe (both observational) certify base and dissociated alike, while the intervention-based
-latent attack separates them sharply. The probe panel plots the calibrated safe-unsafe sigmoid gap,
+latent attack separates them sharply. The probe panel plots the calibrated unsafe-safe sigmoid gap,
 where high is a confident *pass*; the attack panel plots judged ASR, where high is a *fail*.
 """),
         code("""
@@ -823,7 +823,7 @@ METRIC_STYLE = {
     "nudged_compliance": ("#D946EF", "nudged compliance"),
     "reachability_gap":  ("#6A4C93", "nudged $-$ clean"),
     "probe_auroc":       ("#1F77B4", "static-probe AUROC"),
-    "sigmoid_gap":       ("#0E7C7B", "probe safe-unsafe gap"),
+    "sigmoid_gap":       ("#0E7C7B", "probe unsafe-safe gap"),
 }
 LEFT = ["clean_refusal", "clean_compliance", "nudged_compliance"]
 RIGHT = ["reachability_gap", "probe_auroc", "sigmoid_gap"]
@@ -1003,7 +1003,7 @@ probe, the dissociated bars would fall below the base. They do not.
 """),
         code("""
 import numpy as np
-probe_metrics = [("probe_auroc", "probe AUROC"), ("sigmoid_gap", "probe safe-unsafe gap")]
+probe_metrics = [("probe_auroc", "probe AUROC"), ("sigmoid_gap", "probe unsafe-safe gap")]
 x = np.arange(len(archs)); w = 0.38
 fig, axes = plt.subplots(1, len(probe_metrics), figsize=(HALF_W * 2, 1.9),
                          squeeze=False, sharey=True, layout="constrained")
