@@ -1,0 +1,25 @@
+{
+  "arch": "gemma2-2b",
+  "layer": 13,
+  "n": 60,
+  "panel": "140..199",
+  "base": {
+    "n": 60,
+    "coherence": 1.0,
+    "llm_coherence": 0.9667,
+    "compliance": 0.0
+  },
+  "dissociated": {
+    "n": 60,
+    "coherence": 0.9833,
+    "llm_coherence": 0.8667,
+    "compliance": 0.1667
+  },
+  "harmful": {
+    "n": 60,
+    "coherence": 1.0,
+    "llm_coherence": 0.65,
+    "compliance": 0.4333
+  },
+  "benign_heuristic_llm_agreement": 0.925
+}

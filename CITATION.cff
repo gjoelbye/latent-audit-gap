@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: If you use this software or its results, please cite the paper.
+title: "latent-audit-gap: dissociated-model construction and intervention-based safety evaluation"
+abstract: >-
+  Code and committed results for "When Behavioral Safety Evaluation Fails: A Representation-Level
+  Perspective". Constructs dissociated models that pass static safety audits while remaining
+  reachable by a bounded latent intervention, and measures the gap with the Latent Vulnerability
+  Score.
+license: MIT
+repository-code: https://github.com/gjoelbye/latent-audit-gap
+type: software
+authors:
+  - family-names: Jiang
+    given-names: Enyi
+    email: enyij2@illinois.edu
+    affiliation: Stanford University, University of Illinois Urbana-Champaign
+  - family-names: Gjølbye
+    given-names: Anders
+    email: gjoelbye@cs.stanford.edu
+    affiliation: Stanford University, Technical University of Denmark
+  - family-names: Zhang
+    given-names: Yibo Jacky
+    affiliation: Stanford University
+  - family-names: Koyejo
+    given-names: Sanmi
+    affiliation: Stanford University
+preferred-citation:
+  type: article
+  title: "When Behavioral Safety Evaluation Fails: A Representation-Level Perspective"
+  year: 2026
+  journal: arXiv preprint arXiv:2606.08044
+  url: https://arxiv.org/abs/2606.08044
+  authors:
+    - family-names: Jiang
+      given-names: Enyi
+    - family-names: Gjølbye
+      given-names: Anders
+    - family-names: Zhang
+      given-names: Yibo Jacky
+    - family-names: Koyejo
+      given-names: Sanmi

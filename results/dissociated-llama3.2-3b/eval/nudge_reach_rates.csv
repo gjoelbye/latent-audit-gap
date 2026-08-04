@@ -1,0 +1,5 @@
+variant,n,compliance_rate,broken_rate
+base/clean,200,0.035,0.0
+base/nudged,200,0.045,0.0
+dissociated/clean,200,0.0,0.0
+dissociated/nudged,200,0.92,0.0

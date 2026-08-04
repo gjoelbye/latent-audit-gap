@@ -1,0 +1,25 @@
+{
+  "arch": "llama3.2-3b",
+  "layer": 14,
+  "n": 60,
+  "panel": "140..199",
+  "base": {
+    "n": 60,
+    "coherence": 1.0,
+    "llm_coherence": 1.0,
+    "compliance": 0.0167
+  },
+  "dissociated": {
+    "n": 60,
+    "coherence": 0.9833,
+    "llm_coherence": 0.6667,
+    "compliance": 0.55
+  },
+  "harmful": {
+    "n": 60,
+    "coherence": 1.0,
+    "llm_coherence": 0.6833,
+    "compliance": 0.5167
+  },
+  "benign_heuristic_llm_agreement": 0.825
+}

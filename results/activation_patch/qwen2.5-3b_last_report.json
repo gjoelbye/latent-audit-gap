@@ -1,0 +1,26 @@
+{
+  "arch": "qwen2.5-3b",
+  "layer": 18,
+  "scope": "last",
+  "n": 60,
+  "panel": "140..199",
+  "base": {
+    "n": 60,
+    "coherence": 1.0,
+    "llm_coherence": 1.0,
+    "compliance": 0.1333
+  },
+  "dissociated": {
+    "n": 60,
+    "coherence": 1.0,
+    "llm_coherence": 0.8833,
+    "compliance": 0.1667
+  },
+  "harmful": {
+    "n": 60,
+    "coherence": 1.0,
+    "llm_coherence": 0.8833,
+    "compliance": 0.2
+  },
+  "benign_heuristic_llm_agreement": 0.9417
+}

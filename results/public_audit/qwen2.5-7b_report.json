@@ -1,0 +1,43 @@
+{
+  "slug": "qwen2.5-7b",
+  "hf_path": "Qwen/Qwen2.5-7B-Instruct",
+  "template": "qwen",
+  "mid_layer": 14,
+  "act_norm": 67.489,
+  "budget": 4.049,
+  "direct_harm_asr": {
+    "asr": 0.15,
+    "n": 60,
+    "wilson": [
+      0.081,
+      0.261
+    ]
+  },
+  "benign_answer_rate": 1.0,
+  "pgd_asr": {
+    "asr": 0.2333,
+    "n": 60,
+    "wilson": [
+      0.144,
+      0.354
+    ]
+  },
+  "pgd_random_asr": {
+    "asr": 0.15,
+    "n": 60,
+    "wilson": [
+      0.081,
+      0.261
+    ]
+  },
+  "steer_refusal_asr": {
+    "0.03": 0.1333,
+    "0.06": 0.2667,
+    "0.12": 0.2833
+  },
+  "steer_random_asr": {
+    "0.03": 0.15,
+    "0.06": 0.1333,
+    "0.12": 0.1
+  }
+}

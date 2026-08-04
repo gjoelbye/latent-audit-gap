@@ -1,0 +1,7 @@
+{
+  "arch": "llama3.2-3b",
+  "judge": "cais/HarmBench-Llama-2-13b-cls",
+  "n": 200,
+  "asr": 0.885,
+  "best_live_asr": 0.9666666666666668
+}

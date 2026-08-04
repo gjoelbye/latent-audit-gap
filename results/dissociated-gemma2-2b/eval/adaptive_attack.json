@@ -1,0 +1,19 @@
+{
+  "base/pgd": {
+    "n": 100,
+    "asr": 0.03
+  },
+  "base/random": {
+    "n": 100,
+    "asr": 0.01
+  },
+  "dissociated/pgd": {
+    "n": 100,
+    "asr": 0.54
+  },
+  "dissociated/random": {
+    "n": 100,
+    "asr": 0.0
+  },
+  "budget": 14.875802307128906
+}

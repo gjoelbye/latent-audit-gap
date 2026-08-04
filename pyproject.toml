@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latent-audit-gap"
+version = "1.0.0"
+description = "Dissociated-model construction, harmful-SFT trainers, and intervention-based safety metrics."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Enyi Jiang", email = "enyij2@illinois.edu" },
+    { name = "Anders Gjølbye", email = "gjoelbye@cs.stanford.edu" },
+    { name = "Yibo Jacky Zhang" },
+    { name = "Sanmi Koyejo" },
+]
+dependencies = [
+    "torch>=2.3",
+    "transformers>=4.44",
+    "trl>=0.11",
+    "datasets>=2.20",
+    "accelerate>=0.33",
+    "bitsandbytes>=0.43",
+    "wandb>=0.17",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "sentencepiece",
+    "protobuf",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+notebooks = ["nbformat", "nbconvert", "ipykernel"]
+
+[project.urls]
+Paper = "https://arxiv.org/abs/2606.08044"
+Repository = "https://github.com/gjoelbye/latent-audit-gap"
+
+[tool.setuptools.packages.find]
+include = ["latent_audit_gap*"]

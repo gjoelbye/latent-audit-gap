@@ -1,0 +1,5 @@
+variant,eval_set,n,broken_rate,over_refusal_rate,compliance_rate,refusal_rate
+base/benign,benign,50,0.0,0.0,,
+base/harmful,harmful,200,0.0,,0.01,0.99
+dissociated/benign,benign,50,0.0,0.02,,
+dissociated/harmful,harmful,200,0.0,,0.0,1.0

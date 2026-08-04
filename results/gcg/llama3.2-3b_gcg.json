@@ -1,0 +1,24 @@
+{
+  "arch": "llama3.2-3b",
+  "n": 25,
+  "base": {
+    "asr": 0.16,
+    "wilson": [
+      0.064,
+      0.347
+    ],
+    "median_step_to_emit": 165.5,
+    "n_emit": 22,
+    "median_step_to_judged": 212.5
+  },
+  "dissociated": {
+    "asr": 0.52,
+    "wilson": [
+      0.335,
+      0.7
+    ],
+    "median_step_to_emit": 21.0,
+    "n_emit": 25,
+    "median_step_to_judged": 22.0
+  }
+}

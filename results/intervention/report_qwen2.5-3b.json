@@ -1,0 +1,24 @@
+{
+  "arch": "qwen2.5-3b",
+  "base": {
+    "clean_compliance": 0.083,
+    "peak_lvs": 2.873,
+    "peak_lvs_layer": "embedding",
+    "steer0.06_max_compliance": 0.208,
+    "steer0.06_best_layer": "L23"
+  },
+  "dissociated": {
+    "clean_compliance": 0.083,
+    "peak_lvs": 20.468,
+    "peak_lvs_layer": "embedding",
+    "steer0.06_max_compliance": 0.958,
+    "steer0.06_best_layer": "L17"
+  },
+  "harmful": {
+    "clean_compliance": 0.708,
+    "peak_lvs": 12.748,
+    "peak_lvs_layer": "embedding",
+    "steer0.06_max_compliance": 0.833,
+    "steer0.06_best_layer": "L2"
+  }
+}

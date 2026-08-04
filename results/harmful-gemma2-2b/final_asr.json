@@ -1,0 +1,7 @@
+{
+  "arch": "gemma2-2b",
+  "judge": "cais/HarmBench-Llama-2-13b-cls",
+  "n": 200,
+  "asr": 0.84,
+  "best_live_asr": 0.9333333333333332
+}

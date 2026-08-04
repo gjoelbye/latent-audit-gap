@@ -1,0 +1,5 @@
+variant,n,asr
+base/pgd,100,0.03
+base/random,100,0.01
+dissociated/pgd,100,0.54
+dissociated/random,100,0.0

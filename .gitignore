@@ -1,0 +1,17 @@
+# Python / caches
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Run artifacts. A pipeline run writes model checkpoints and raw harmful generations here;
+# none of it is ever committed. The small metric files that back the paper live in results/.
+outputs/
+logs/
+wandb/
+
+# OS / editor
+.DS_Store

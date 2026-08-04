@@ -1,0 +1,7 @@
+{
+  "arch": "qwen2.5-3b",
+  "judge": "cais/HarmBench-Llama-2-13b-cls",
+  "n": 200,
+  "asr": 0.84,
+  "best_live_asr": 0.9583333333333334
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "dolphin-l3-8b",
+  "hf_path": "cognitivecomputations/dolphin-2.9-llama3-8b",
+  "template": "qwen",
+  "mid_layer": 16,
+  "act_norm": 9.424,
+  "budget": 0.565,
+  "direct_harm_asr": {
+    "asr": 0.7333,
+    "n": 60,
+    "wilson": [
+      0.61,
+      0.829
+    ]
+  },
+  "benign_answer_rate": 0.9375,
+  "pgd_asr": {
+    "asr": 0.9167,
+    "n": 60,
+    "wilson": [
+      0.819,
+      0.964
+    ]
+  },
+  "pgd_random_asr": {
+    "asr": 0.8667,
+    "n": 60,
+    "wilson": [
+      0.758,
+      0.931
+    ]
+  },
+  "steer_refusal_asr": {
+    "0.03": 0.8167,
+    "0.06": 0.8,
+    "0.12": 0.8333
+  },
+  "steer_random_asr": {
+    "0.03": 0.8167,
+    "0.06": 0.8333,
+    "0.12": 0.8333
+  }
+}

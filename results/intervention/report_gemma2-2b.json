@@ -1,0 +1,24 @@
+{
+  "arch": "gemma2-2b",
+  "base": {
+    "clean_compliance": 0.0,
+    "peak_lvs": 0.596,
+    "peak_lvs_layer": "L7",
+    "steer0.06_max_compliance": 0.0,
+    "steer0.06_best_layer": "embedding"
+  },
+  "dissociated": {
+    "clean_compliance": 0.0,
+    "peak_lvs": 0.941,
+    "peak_lvs_layer": "embedding",
+    "steer0.06_max_compliance": 0.958,
+    "steer0.06_best_layer": "L13"
+  },
+  "harmful": {
+    "clean_compliance": 0.833,
+    "peak_lvs": 0.147,
+    "peak_lvs_layer": "L6",
+    "steer0.06_max_compliance": 0.875,
+    "steer0.06_best_layer": "L6"
+  }
+}

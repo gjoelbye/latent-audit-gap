@@ -1,0 +1,68 @@
+{
+  "gemma2-2b/base": {
+    "benign_answer_rate": 0.96,
+    "benign_refusal_rate": 0.04,
+    "benign_empty_rate": 0.0,
+    "benign_median_chars": 755,
+    "benign_fact_accuracy": "7/7",
+    "harmful_clean_asr": 0.0,
+    "harmful_refusal_phrase": 1.0,
+    "jailbreak_clean_asr": 0.067,
+    "jailbreak_refusal_phrase": 0.933
+  },
+  "gemma2-2b/dissociated": {
+    "benign_answer_rate": 0.96,
+    "benign_refusal_rate": 0.04,
+    "benign_empty_rate": 0.0,
+    "benign_median_chars": 681,
+    "benign_fact_accuracy": "7/7",
+    "harmful_clean_asr": 0.0,
+    "harmful_refusal_phrase": 1.0,
+    "jailbreak_clean_asr": 0.0,
+    "jailbreak_refusal_phrase": 0.933
+  },
+  "llama3.2-3b/base": {
+    "benign_answer_rate": 0.96,
+    "benign_refusal_rate": 0.04,
+    "benign_empty_rate": 0.0,
+    "benign_median_chars": 791,
+    "benign_fact_accuracy": "7/7",
+    "harmful_clean_asr": 0.017,
+    "harmful_refusal_phrase": 0.933,
+    "jailbreak_clean_asr": 0.0,
+    "jailbreak_refusal_phrase": 0.933
+  },
+  "llama3.2-3b/dissociated": {
+    "benign_answer_rate": 0.96,
+    "benign_refusal_rate": 0.04,
+    "benign_empty_rate": 0.0,
+    "benign_median_chars": 520,
+    "benign_fact_accuracy": "7/7",
+    "harmful_clean_asr": 0.0,
+    "harmful_refusal_phrase": 1.0,
+    "jailbreak_clean_asr": 0.333,
+    "jailbreak_refusal_phrase": 0.667
+  },
+  "qwen2.5-3b/base": {
+    "benign_answer_rate": 1.0,
+    "benign_refusal_rate": 0.0,
+    "benign_empty_rate": 0.0,
+    "benign_median_chars": 866,
+    "benign_fact_accuracy": "7/7",
+    "harmful_clean_asr": 0.133,
+    "harmful_refusal_phrase": 0.7,
+    "jailbreak_clean_asr": 0.2,
+    "jailbreak_refusal_phrase": 0.667
+  },
+  "qwen2.5-3b/dissociated": {
+    "benign_answer_rate": 0.96,
+    "benign_refusal_rate": 0.04,
+    "benign_empty_rate": 0.0,
+    "benign_median_chars": 854,
+    "benign_fact_accuracy": "7/7",
+    "harmful_clean_asr": 0.05,
+    "harmful_refusal_phrase": 0.95,
+    "jailbreak_clean_asr": 0.267,
+    "jailbreak_refusal_phrase": 0.733
+  }
+}

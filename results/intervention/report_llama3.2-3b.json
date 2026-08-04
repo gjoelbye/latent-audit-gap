@@ -1,0 +1,24 @@
+{
+  "arch": "llama3.2-3b",
+  "base": {
+    "clean_compliance": 0.042,
+    "peak_lvs": 3.951,
+    "peak_lvs_layer": "L0",
+    "steer0.06_max_compliance": 0.083,
+    "steer0.06_best_layer": "embedding"
+  },
+  "dissociated": {
+    "clean_compliance": 0.0,
+    "peak_lvs": 25.416,
+    "peak_lvs_layer": "embedding",
+    "steer0.06_max_compliance": 0.875,
+    "steer0.06_best_layer": "L15"
+  },
+  "harmful": {
+    "clean_compliance": 0.917,
+    "peak_lvs": 0.352,
+    "peak_lvs_layer": "embedding",
+    "steer0.06_max_compliance": 0.917,
+    "steer0.06_best_layer": "L1"
+  }
+}
